@@ -28,3 +28,4 @@ ipdb==0.13.9
 
 requests-mock==1.9.3
 setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+ipython>=8.10.0 # not directly required, pinned by Snyk to avoid a vulnerability
