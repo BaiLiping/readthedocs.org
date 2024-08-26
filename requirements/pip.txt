@@ -3,7 +3,7 @@
 pip==21.1.3
 virtualenv==20.4.7
 
-django==3.2.15  # pyup: <2.3
+django==4.2.15
 django-extensions==3.1.3
 django_polymorphic==3.0.0
 django-autoslug==1.9.8
@@ -22,16 +22,16 @@ drf-extensions==0.7.0
 django-vanilla-views==3.0.0
 jsonfield==3.1.0
 
-requests==2.25.1
+requests==2.32.2
 requests-toolbelt==0.9.1
 slumber==0.7.1
 pyyaml==5.4.1
-Pygments==2.9.0
+Pygments==2.15.0
 
 # Basic tools
 redis==4.3.6
 kombu==5.1.0
-celery==5.1.2
+celery==5.2.2
 
 # When upgrading to 0.43.0 we should double check the ``base.html`` change
 # described in the changelog. In previous versions, the allauth app included a
@@ -41,7 +41,7 @@ celery==5.1.2
 # override ``account/base.html`` within your project.
 django-allauth==0.42.0  # pyup: ignore
 
-GitPython==3.1.18
+GitPython==3.1.41
 
 # Search
 elasticsearch==7.13.2  # pyup: <8.0.0
@@ -56,7 +56,7 @@ pyquery==1.4.3
 python-dateutil==2.8.1
 
 # Ignoring orjson for now because it makes Travis to fail
-orjson==2.0.7  # pyup: ignore
+orjson==3.9.15  # pyup: ignore
 
 # Utils
 django-gravatar2==1.4.4
@@ -117,4 +117,7 @@ django-debug-toolbar==3.2.1
 django-csp==3.7
 # For setting the permissions-policy security header
 django-permissions-policy==4.0.1
-setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
+idna>=3.7 # not directly required, pinned by Snyk to avoid a vulnerability
+sqlparse>=0.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
